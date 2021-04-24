@@ -1,0 +1,102 @@
+[
+	{
+		"id": 1,
+		"name": "Bogotá",
+		"deparment": "Cundinamarca"
+	},
+	{
+		"id": 2,
+		"name": "Medellín",
+		"deparment": "Antioquia"
+	},
+	{
+		"id": 3,
+		"name": "Cali",
+		"deparment": "Valle del Cauca"
+	},
+	{
+		"id": 4,
+		"name": "Barranquilla",
+		"deparment": "Atlántico"
+	},
+	{
+		"id": 5,
+		"name": "Cartagena",
+		"deparment": "Indias Bolívar"
+	},
+	{
+		"id": 6,
+		"name": "Soacha",
+		"deparment": "Cundinamarca"
+	},
+	{
+		"id": 7,
+		"name": "Cúcuta",
+		"deparment": "Norte de Santander"
+	},
+	{
+		"id": 8,
+		"name": "Soledad",
+		"deparment": "Atlántico"
+	},
+	{
+		"id": 9,
+		"name": "Bucaramanga",
+		"deparment": "Santander"
+	},
+	{
+		"id": 10,
+		"name": "Bello",
+		"deparment": "Antioquia"
+	},
+	{
+		"id": 11,
+		"name": "Villavicencio",
+		"deparment": "Meta"
+	},
+	{
+		"id": 12,
+		"name": "Ibagué",
+		"deparment": "Tolima"
+	},
+	{
+		"id": 13,
+		"name": "Santa Marta",
+		"deparment": "Magdalena"
+	},
+	{
+		"id": 14,
+		"name": "Valledupar",
+		"deparment": "Cesar"
+	},
+	{
+		"id": 15,
+		"name": "Manizales",
+		"deparment": "Caldas"
+	},
+	{
+		"id": 16,
+		"name": "Pereira",
+		"deparment": "Risaralda"
+	},
+	{
+		"id": 17,
+		"name": "Montería",
+		"deparment": "Córdoba"
+	},
+	{
+		"id": 18,
+		"name": "Neiva",
+		"deparment": "Huila"
+	},
+	{
+		"id": 19,
+		"name": "Pasto",
+		"deparment": "Nariño"
+	},
+	{
+		"id": 20,
+		"name": "Armenia",
+		"deparment": "Quindío"
+	}
+]

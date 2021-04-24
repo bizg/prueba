@@ -1,0 +1,12 @@
+[
+	{
+		"id": 1,
+		"name": "mike",
+		"lastname": "cardona rodriguez",
+		"phone": "3235852120",
+		"address": "carrera 24",		
+		"city": "Medellín",
+		"concessionaire": "concesionario numero 3",
+		"status": "Activo"
+	}
+]

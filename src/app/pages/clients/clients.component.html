@@ -1,0 +1,44 @@
+<div class="col-md-4 search">
+	<form class="d-flex">
+		<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+		<button class="btn btn-outline-success me-2" type="submit">Buscar</button>
+		<input class="btn btn-outline-primary me-2" type="button" (click)="onCreate();open(save)" value="Crear">
+	</form>
+</div>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Nombre</th>
+			<th scope="col">Apellido</th>
+			<th scope="col">Ciudad</th>
+			<th scope="col">Telefono</th>
+			<th scope="col">Dirección</th>
+			<th scope="col">Estado</th>
+			<th scope="col">Actualizar</th>
+			<th scope="col">Eliminar</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let item of clients">
+			<th scope="row">{{ item.id }}</th>
+			<td>{{ item.name }}</td>
+			<td>{{ item.lastname }}</td>
+			<td>{{ item.city }}</td>
+			<td>{{ item.phone }}</td>
+			<td>{{ item.address }}</td>
+			<td>{{ item.status }}</td>
+			<td><img src="assets/images/pencil-square.svg" alt="trash" (click)="onUpdate(item);open(save);"></td>
+			<td><img src="assets/images/trash.svg" alt="trash" (click)="onDelete(item);open(delete);"></td>
+		</tr>
+	</tbody>
+</table>
+
+<ng-template #save let-modal>
+	<app-save (emision)="onSend($event)" [modal]="modal" [dataUpdate]="dataUpdate"></app-save>
+</ng-template>
+
+<ng-template #delete let-modal>
+	<app-delete (emision)="onSend($event)" [modal]="modal" [data]="data"></app-delete>
+</ng-template>

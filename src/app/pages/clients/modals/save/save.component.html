@@ -1,0 +1,58 @@
+<div class="modal-content">
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Cliente</h4>
+		<button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="modal-body">
+		<form>
+			<div class="form-group">
+				<label for="name">Nombre</label>
+				<div class="input-group">
+					<input id="name" class="form-control" placeholder="Nombre" name="name" [(ngModel)]="name">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name">Apellido</label>
+				<div class="input-group">
+					<input id="lastname" class="form-control" placeholder="Apellido" name="lastname" [(ngModel)]="lastname">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name">Ciudad</label>
+				<div class="input-group">
+					<select name="city" id="city" class="form-control" [(ngModel)]="city">
+						<option value="">- Seleccione un opción -</option>
+						<option *ngFor="let item of cities" [value]="item.name">{{ item.name }}</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name">Concesionario</label>
+				<div class="input-group">
+					<select name="concessionaire" id="concessionaire" class="form-control" [(ngModel)]="concessionaire">
+						<option value="">- Seleccione un opción -</option>
+						<option *ngFor="let item of concessionaires" [value]="item.name">{{ item.name }}</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name">Telefono</label>
+				<div class="input-group">
+					<input id="phone" class="form-control" placeholder="Telefono" name="phone" [(ngModel)]="phone">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name">Direccion</label>
+				<div class="input-group">
+					<input id="address" class="form-control" placeholder="Direccion" name="address" [(ngModel)]="address">
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button *ngIf="!edit" type="button" class="btn btn-outline-success" (click)="modal.close('Save click');onSubmit();">Save</button>
+		<button *ngIf="edit"type="button" class="btn btn-outline-success" (click)="modal.close('Save click');onSubmit2();">Save</button>
+	</div>
+</div>
